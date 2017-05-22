@@ -8,7 +8,7 @@ get '/random-kitty' do
 end
 
 get '/named-kitty' do
+  p params
   @name = params[:name]
-  @age  = params[:age]
   erb(:index)
 end

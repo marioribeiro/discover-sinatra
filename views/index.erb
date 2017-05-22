@@ -1,8 +1,11 @@
 <% if @name %>
 <h1>My name's <%= @name %></h1>
+<% else %>
+<form action="/named-kitty">
+  <input type="text" name="name">
+  <input type="submit" value="Submit">
+</form>
 <% end %>
 <div style='border: 3px red dashed'>
   <img src='http://bit.ly/1eze8aE'>
 </div>
-
-
