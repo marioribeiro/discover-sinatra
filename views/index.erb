@@ -1,11 +1,16 @@
-<% if @name %>
-<h1>My name's <%= @name %></h1>
-<% else %>
-<form action="/named-kitty">
-  <input type="text" name="name">
-  <input type="submit" value="Submit">
-</form>
-<% end %>
-<div style='border: 3px red dashed'>
-  <img src='http://bit.ly/1eze8aE'>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<div class="kitty">
+  <% if @name %>
+  <h1>My name's <%= @name %></h1>
+  <% else %>
+  <form action="/named-kitty">
+    <input type="text" name="name">
+    <input type="submit" value="Submit">
+  </form>
+  <% end %>
+  <img class="img-circle bordered" src="img/kitty.png" alt="Lovely kitty">
 </div>
+

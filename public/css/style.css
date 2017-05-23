@@ -1,0 +1,13 @@
+.bordered {
+  border: 3px dashed pink;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.kitty {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
